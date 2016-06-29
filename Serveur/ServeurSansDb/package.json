@@ -1,0 +1,17 @@
+{
+  "name": "alizee",
+  "version": "1.0.0",
+  "description": "coucou",
+  "main": "serverAdneom.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "httpdispatcher": "^1.0.0",
+    "mongodb": "^2.1.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

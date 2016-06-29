@@ -1,0 +1,120 @@
+/* liste.scss */
+/* line 9, ../scss/liste.scss */
+body main h2 {
+  color: #1951A8;
+  font-size: 1em;
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}
+/* line 17, ../scss/liste.scss */
+body main form {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 22, ../scss/liste.scss */
+body main form input {
+  flex: 1;
+  margin-right: 1em;
+  padding: 0.8em 0.8em 0.8em;
+  border: 1px solid #1951A8;
+}
+/* line 30, ../scss/liste.scss */
+body main form input[type="button"] {
+  background-color: #1951A8;
+  color: white;
+  margin-right: 0;
+}
+/* line 38, ../scss/liste.scss */
+body main hr {
+  margin-top: 2em;
+  opacity: 0.3;
+}
+/* line 44, ../scss/liste.scss */
+body main div.news {
+  display: flex;
+  margin-bottom: 1em;
+}
+/* line 49, ../scss/liste.scss */
+body main div.news div.headline {
+  flex: 2;
+  text-align: center;
+  color: white;
+}
+/* line 55, ../scss/liste.scss */
+body main div.news div.headline div {
+  padding: 0.8em;
+}
+/* line 60, ../scss/liste.scss */
+body main div.news div.headline div:first-child {
+  background-color: #2970E1;
+  border-radius: 6px 0 0 0;
+}
+/* line 66, ../scss/liste.scss */
+body main div.news div.headline div:last-child {
+  background-color: #d2d2d2;
+  border-radius: 0 0 0 6px;
+  color: #373737;
+}
+/* line 73, ../scss/liste.scss */
+body main div.news div.headline div:last-child:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* line 79, ../scss/liste.scss */
+body main div.news div.headline div:last-child:hover .fa-heart {
+  color: #b42828;
+  transform: scale(1.35);
+  transition: 0.5s;
+}
+/* line 88, ../scss/liste.scss */
+body main div.news div.titreNews {
+  flex: 8;
+  border-radius: 0 6px 6px 0;
+  background-color: gainsboro;
+  color: #323232;
+  padding: 0.8em;
+  position: relative;
+}
+/* line 99, ../scss/liste.scss */
+body main div.news div.titreNews a h3 {
+  font-weight: 200;
+  margin-left: 1em;
+  position: absolute;
+  top: 50%;
+  /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%);
+  /* tiré de la moitié de sa propre hauteur */
+}
+/* line 107, ../scss/liste.scss */
+body main div.news div.titreNews a h3 .fa-external-link {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 128, ../scss/liste.scss */
+  body header ul.nav li a {
+    font-size: 0.8em;
+  }
+  /* line 136, ../scss/liste.scss */
+  body main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* line 141, ../scss/liste.scss */
+  body main form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /* line 147, ../scss/liste.scss */
+  body main form input {
+    flex: 1;
+    margin-right: 0;
+    padding: 1em;
+    margin-top: 0.8em;
+  }
+  /* line 155, ../scss/liste.scss */
+  body main form input[type="button"] {
+    padding: 1em 0.5em 2.2em;
+  }
+}

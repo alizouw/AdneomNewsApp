@@ -1,0 +1,10 @@
+Installation rapide Angular2
+
+1) Installer nodeJS
+2) Copier le dossier angular2ProjetReady vers son ordi
+3) En console : se rendre dans le dossier "angular2ProjetReady" avec la commande cd (où vous l'avez mis en somme)
+3) npm install
+4) npm run typings install
+5) npm start
+
+Cela vous lance l'application automatiquement :)

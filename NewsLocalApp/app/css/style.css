@@ -1,0 +1,423 @@
+
+/* ===============================
+			BASIC CSS
+=============================== */
+
+body{
+	margin: 0 auto;
+	padding: 10px;
+	color: #444348;
+	line-height: 150%;
+	font-weight: 200;
+    font-family: 'Helvetica', sans-serif;
+}
+.container{
+	margin: 2em auto 0;
+	max-width: 1080px;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 200;
+}
+h2{ 	
+	font-size: 24px;
+}
+a{
+	text-decoration: none;
+}
+
+ul
+{
+	list-style-type : none;
+	padding: 0;
+}
+
+.clear{.
+	clear: both;
+}
+
+.hide{
+	display: none;
+}
+
+:focus{
+	outline: none;
+}
+.clearfix{
+	clear: both;
+}
+
+/* ===============================
+			BUTTONS
+=============================== */
+
+button{
+	border: none;
+}
+
+a{
+	width: inherit;
+	height: inherit;
+	color: inherit;
+}
+
+.more{
+	display: inline-block;
+	width: 102px;
+	padding: 16px;
+	padding-right: 88px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 170px;
+	color: white;
+	text-transform: uppercase;
+	transition: background-position-x 200ms ease-out;
+}
+
+.more:hover{
+	background: #212124 url(../_images/eye.svg) no-repeat;
+	background-position: center center;
+	background-size: 50px;
+	color: transparent;	
+}
+
+.prev, .share, .next{
+	position: absolute;
+	bottom: -130px;
+	width: 213px;
+	height: 50px;
+	border: solid 2px #212124;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+.prev:hover, .share:hover, .next:hover{
+	background:  #212124;
+	color: white;
+}
+.share{
+	left: calc(50% - 106px);
+}
+
+.next{
+	right: 50px;
+}
+
+.prev{
+	left: 50px;
+}
+.prev_before, .next_after{
+	width: 50px;
+	height: 50px;
+	background: #212124;
+	position: absolute;
+	top: -2px;
+}
+.prev_before{
+	left: -50px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: rotate(180deg);
+}
+
+.next_after{
+	right: -50px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* ===============================
+			CONTACT
+=============================== */
+/* FORM */
+
+form{
+}
+
+input
+{
+
+}
+
+textarea{
+	display: block;
+	border: solid 1px #212124;
+	margin-bottom: 18px;
+	padding: 14px 14px 14px 65px;
+	width: 307px;
+}
+
+input[type="submit"]{
+	width: 395px;
+	background-color: #212124;
+	color: white;
+	padding: 14px;
+}
+
+input[type="submit"]:hover{
+	background: #212124 url(../_images/plane.svg) no-repeat;
+	background-position: center center;
+	background-size: 35px;
+	color: transparent;	
+}
+
+input[name="name"]{
+	background: url(../_images/person.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: center;
+	background-position-x: 14px;
+}
+input[name="mail"]{
+	background: url(../_images/mail.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: center;
+	background-position-x: 14px;
+}
+textarea[name="message"]{
+	background: url(../_images/dots.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: 18px;
+	background-position-x: 14px;
+	height: 218px;
+}
+
+/* ===============================
+			ARTICLE
+=============================== */
+article{
+	width: 286px;
+	background: #FFF;
+	margin-top: 80px;
+	padding: 40px;
+}
+article p{
+	margin-top: 38px;
+	line-height: 150%;
+}
+.titre_article{
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: solid 5px #36A1AF;
+	font-weight: 500;
+}
+.right{
+	float: right;
+}
+
+/* ===============================
+			SECTIONS
+=============================== */
+
+section, .section , header{
+	height: 100v%;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+}
+
+.header_img
+{
+	margin-top: 4em;
+	height: 86vh;
+	background: url(../../images/header_image.png) center no-repeat;
+	background-size: cover;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: opacity 1s ease forwards;
+	-webkit-animation-delay: .3s;
+}
+
+footer{
+	padding: 30px;
+	height: 70px;
+}
+.image_right{
+	float: right;
+}
+
+/* ===============================
+			HEADER
+=============================== */
+
+.index{
+	z-index: 1;
+	position: fixed;
+	top: 30px;
+	left: 70px;
+	width: 213px;
+	height: 50px;
+	border: solid 1px #212124;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.index_before{
+	position: absolute;
+	left: -40px;
+	top:-2px;
+	width: 46px;
+	height: 46px;
+	border: solid 2px #212124;
+	background: #FFF url(../_images/next.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 35px;
+}
+
+
+.burger_active{
+	background: #FFF url(../_images/close_bck.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px;
+}
+
+.logo{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: calc(50% - 200px);
+	left: calc(50% - 145px);
+	background: #fff center fixed;
+	padding: 45px;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: .8s;
+}
+.logo_petit{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 200px;
+	left: calc(50% - 90px);
+	background: #fff center fixed;
+	padding: 30px;
+}
+
+.baseline{
+	text-align: center;
+	position: relative;
+	top: 70%;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: 1s;
+}
+
+/* ===============================
+			FOOTER
+=============================== */
+
+footer p{
+	padding-top: 20px;
+	text-align: center;
+	clear: both;
+}
+
+/* ===============================
+			CHEVRON
+=============================== */
+
+.scrolldown {
+	background: url(../../images/chevron_white.png) 50% 55% no-repeat;
+	background-size: 40%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: calc(100vh - 100px);
+	margin: -25px 0 0 -25px;
+	
+}
+
+.scrolldown:after {
+  	z-index: 1;
+  	content: "";
+  	position: absolute;
+  	top: 1px;
+  	bottom: 1px;
+  	left: 1px;
+  	right: 1px;
+  	border-radius: 100%;
+  	background: transparent;
+  	border: 2px solid #fff;
+  	-webkit-animation: pulse 2s infinite;
+}
+
+
+/* ===============================
+			ANIMATIONS
+=============================== */
+
+@-webkit-keyframes pulse {
+
+  0% {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% { opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes textApparition {
+
+	0% { -webkit-transform:translateY(10px); opacity: 0; }
+	100% { -webkit-transform:translateY(0px); opacity: 1; }
+
+}
+
+@-webkit-keyframes fadeInUp {
+  	
+  	0% {
+    	opacity: 0;
+    	-webkit-transform: translateY(40px);
+  	}
+
+	100% {
+    	opacity: 1;
+    	-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes opacity {
+  	
+  	0% {
+    	opacity: 0;
+  	}
+
+	100% {
+    	opacity: 1;
+	}
+}
+
+/* ===============================
+		MEDIA QUERIES
+=============================== */
+
+@media (max-width: 1000px){ 
+	.container{
+		
+	}
+																																								
+}

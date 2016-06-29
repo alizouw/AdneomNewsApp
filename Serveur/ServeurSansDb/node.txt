@@ -1,0 +1,27 @@
+Installation du module httpdispatcher via la console :
+
+> npm install httpdispatcher			//installation module httpdispatcher
+
+
+----------
+
+utiliser le fichier serverAdneom.js (et news.js pour tester)
+
+cfr : http://blog.modulus.io/nodejs-and-express-create-rest-api
+
+
+
+//importation des modules http et express
+var express = require('express');
+var http = require('http');
+
+//inclusion de news.js (attention, ajouter la ligne "module.exports=news;" dans le fichier news.js)
+var news = require("./news.js");
+
+//création du serveur
+var app = express();
+var server = http.createServer(app);
+
+
+
+

@@ -1,0 +1,76 @@
+
+/* header.scss */
+
+body
+{
+	margin: 0 auto;
+
+	header
+	{
+		background-color : #1951A8;
+		color: white;
+
+		h1
+		{
+			padding: 0.5em 1em 0.5em;
+			margin-bottom: 0.6em;
+			float: left;
+			color: white;
+		}
+	}
+
+	h1
+	{
+		font-weight: 200;
+    	font-family: 'Helvetica', sans-serif;
+		font-size: 2em;
+	}
+
+	ul.nav
+	{
+		float: right;
+		display: flex;
+		justify-content: space-between;
+
+		li
+		{
+			margin: 1em 2.5em 0 0;
+		}
+
+		a
+		{
+			padding: 0 0 5px 0;
+			margin-left: 50px;
+			border-bottom: 1px solid white;
+			transition: 0.4s;
+			opacity: 0.8;
+		}
+
+		a:hover
+		{
+			opacity: 1;
+			border-bottom : 1px solid rgba(0,0,0,0);
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 860px)
+{
+	body
+	{
+		h1
+		{
+			font-size: 1.3em;
+		}
+
+		ul.nav
+		{
+			li
+			{
+				margin: 0.4em 2.5em 0 0;
+			}
+		}
+	}
+}

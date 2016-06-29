@@ -1,0 +1,45 @@
+<addArticle [(lesnews)]="lesnews"></addArticle>
+<section id="news">
+      <div class="container">
+        <h2>Les news</h2>
+        <div class="lesNews">
+            <div class="news" *ngFor="let newsprop of lesnews">
+              <div class="headline"
+                [class.selected]="newsprop === selectedNews"
+                (click)="onSelect(newsprop)">
+                <div class="badge"><p>News {{newsprop.id}}</p></div>
+                  <div>
+                    <i class="fa fa-heart" aria-hidden="true"></i><p>{{newsprop.votes}} votes</p>
+                  </div>
+                </div>
+                  <div class="titreNews">
+                    <a href="{{newsprop.lien}}">
+                      <h3>{{newsprop.titre}}<i class="fa fa-external-link" aria-hidden="true"></i></h3>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+  
+
+  <!--<section id="news">
+   <div class="container">
+        <h2>Les news</h2>
+        <div class="news" *ngFor="let news of listeNews">
+            <a href={{news.url}}>
+                <div class="head">
+                    <h3>{{news.titre}}</h3>
+                </div>
+            </a>
+            <div class="headline">
+                <div>
+                    <p>{{news.titre}}</p>
+                </div>
+                <div>
+                    <i class="fa fa-heart" aria-hidden="true"></i><p>4 votes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->

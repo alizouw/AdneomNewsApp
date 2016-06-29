@@ -1,0 +1,15 @@
+Express (module)
+
+Tutorial un peu foireux : http://blog.modulus.io/nodejs-and-express-create-rest-api
+
+
+Installer le module Express via la console : 
+npm install express --save
+
+
+
+Ouvrir le navigateur :
+localhost:8080
+localhost:8080/news/2		//affichage d'une seule news
+localhost:8080/news/ajout	//ajout d'un article
+
